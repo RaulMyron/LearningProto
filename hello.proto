@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+message HelloMessage {
+  required string greeting = 1;
+}
+
+service HelloService {
+  rpc SayHello (HelloMessage) returns (HelloMessage);
+}
